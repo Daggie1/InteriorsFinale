@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title') - {{ config('settings.site_name')}}</title>
     @include('site.partials.styles')
+    @yield('styles')
 </head>
 <body>
 @include('site.partials.header')

@@ -1,5 +1,17 @@
 @extends('site.app')
 @section('title', $product->name)
+@section('styles')
+    <style type="text/css">
+        .modal-notify .modal-header {
+            border-radius: 3px 3px 0 0;
+            background-color: blue;
+            color:white;
+        }
+        .modal-notify .modal-content {
+            border-radius: 8px;
+        }
+    </style>
+    @endsection
 @section('content')
     <section class="section-pagetop bg-dark">
         <div class="container clearfix">
@@ -70,6 +82,8 @@
                                     </div>
                                     <hr>
                                     <form action="{{ route('product.add.cart') }}" method="POST" role="form" id="addToCart">
+                                    <hr>
+                                    <form action="{{ route('product.add.cart') }}" method="POST" role="form" id="addToCart">
                                         @csrf
                                         <div class="row">
                                             <div class="col-sm-12">
@@ -109,10 +123,18 @@
                                                 </dl>
                                             </div>
                                         </div>
-                                        <hr>
+
+
+
+                                            <hr>
                                         <button type="submit" class="btn btn-success"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
                                     </form>
                                 </article>
+                                <div id="app">
+                              <example-component>
+
+                              </example-component>
+                                </div>
                             </aside>
                         </div>
                     </div>
