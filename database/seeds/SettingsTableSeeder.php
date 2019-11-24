@@ -11,11 +11,11 @@ class SettingsTableSeeder extends Seeder
     protected $settings = [
         [
             'key'                       =>  'site_name',
-            'value'                     =>  'E-Commerce Application',
+            'value'                     =>  'Interiors',
         ],
         [
             'key'                       =>  'site_title',
-            'value'                     =>  'E-Commerce',
+            'value'                     =>  'Interiors',
         ],
         [
             'key'                       =>  'default_email_address',
@@ -23,11 +23,11 @@ class SettingsTableSeeder extends Seeder
         ],
         [
             'key'                       =>  'currency_code',
-            'value'                     =>  'GBP',
+            'value'                     =>  'Ksh',
         ],
         [
             'key'                       =>  'currency_symbol',
-            'value'                     =>  '£',
+            'value'                     =>  'Ksh',
         ],
         [
             'key'                       =>  'site_logo',
