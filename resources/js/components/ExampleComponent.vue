@@ -56,6 +56,7 @@
 <script>
     export default {
         name: "example-component",
+        props: ['tile_size'],
         data() {
             return {
             widtht:0,
@@ -68,7 +69,7 @@
             // a computed getter
             quantity: function () {
                 // `this` points to the vm instance
-                return (this.widtht *this.lengtht)*this.noOfRooms
+                return ((this.widtht *this.lengtht)*this.noOfRooms)/this.tile_size
             }
         }
     }
